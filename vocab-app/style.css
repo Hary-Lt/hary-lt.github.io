@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #121212;
+  color: white;
+  text-align: center;
+}
+
+.screen { display: none; padding: 20px; }
+.screen.active { display: block; }
+
+button {
+  padding: 12px;
+  margin: 10px;
+  border-radius: 12px;
+  border: none;
+  background: #1e88e5;
+  color: white;
+  font-size: 16px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+}
+
+.card {
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.correct { background: #2e7d32 !important; }
+.wrong { background: #c62828 !important; }

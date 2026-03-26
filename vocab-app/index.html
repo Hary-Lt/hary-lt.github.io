@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vocab App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <div id="start-screen" class="screen active">
+    <h1>📚 Vocab Trainer</h1>
+    <button onclick="showScreen('manage')">Manage Words</button>
+    <button onclick="showScreen('menu')">Start Learning</button>
+  </div>
+
+  <div id="manage" class="screen">
+    <h2>Your Vocabulary</h2>
+    <input id="word" placeholder="English word">
+    <input id="meaning" placeholder="Vietnamese meaning">
+    <button onclick="addWord()">Add</button>
+    <ul id="word-list"></ul>
+    <button onclick="showScreen('start-screen')">Back</button>
+  </div>
+
+  <div id="menu" class="screen">
+    <h2>Choose Game</h2>
+    <button onclick="startGame('image')">🧩 Image Match</button>
+    <button onclick="startGame('pair')">🔗 Word Match</button>
+    <button onclick="startGame('quiz')">❓ Quiz</button>
+    <button onclick="showScreen('start-screen')">Back</button>
+  </div>
+
+  <div id="game" class="screen"></div>
+
+</div>
+
+<script src="app.js"></script>
+<script src="games/match-image.js"></script>
+<script src="games/match-word.js"></script>
+<script src="games/quiz.js"></script>
+
+</body>
+</html>
